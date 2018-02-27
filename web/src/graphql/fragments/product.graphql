@@ -1,0 +1,6 @@
+fragment ProductData on ProductObject {
+  id
+  price
+  title
+  description
+}

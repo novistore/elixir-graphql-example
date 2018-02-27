@@ -1,0 +1,7 @@
+#import "../../fragments/product"
+
+query products {
+  products {
+    ...ProductData
+  }
+}

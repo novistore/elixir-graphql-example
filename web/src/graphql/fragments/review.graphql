@@ -1,0 +1,6 @@
+fragment ReviewData on ReviewObject {
+  id
+  email
+  title
+  body
+}

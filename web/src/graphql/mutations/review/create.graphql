@@ -1,0 +1,7 @@
+#import "../../fragments/review"
+
+mutation createReview ($input: ReviewInputObject!) {
+  review: createReview (input: $input) {
+    ...ReviewData
+  }
+}

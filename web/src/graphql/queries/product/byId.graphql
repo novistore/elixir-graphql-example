@@ -1,0 +1,12 @@
+#import "../../fragments/product"
+#import "../../fragments/review"
+
+query productById ($id: ID!) {
+  product: productById(id: $id) {
+    ...ProductData
+
+    reviews {
+      ...ReviewData
+    }
+  }
+}

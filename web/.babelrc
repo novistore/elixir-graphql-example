@@ -1,0 +1,23 @@
+{
+  "presets": [
+    ["env", {
+      "modules": false,
+      "targets": {
+        "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
+      }
+    }],
+    "stage-2"
+  ],
+  "plugins": ["transform-vue-jsx", "transform-runtime", ["module-resolver", {
+    "root": ["./src"],
+    "extensions": [".vue"],
+    "alias": {
+      "components": "./src/components",
+      "gql": "./src/graphql",
+      "queries": "./src/graphql/queries",
+      "mutations": "./src/graphql/mutations",
+      "pages": "./src/pages",
+      "store": "./src/store"
+    }
+  }]]
+}
